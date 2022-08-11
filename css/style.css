@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    /* ENCABEZADO */
+header {
+    background-color: rgba(0, 0, 0, 0.945);
+    width: 100%;
+    height: 90px;
+}
+
+.navegacion {
+    max-width: 100%;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.title {
+    float: left;
+    margin: 25px 25px;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.navegacion {
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    z-index: 1000;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.navegacion ul li {
+    display: inline-block;
+    position: relative;
+    transition: 5s linear;
+    z-index: 1000;
+}
+
+.navegacion ul li a {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 20px;
+    transition: 0.4s linear;
+}
+
+.navegacion ul li a:hover {
+    color: rgb(255, 231, 154);
+    /* transform: scale(2); */
+}
+
+.navegacion ul li:hover .hijos {
+    display: block;
+}
+
+.navegacion .submenu .hijos {
+    display: none;
+    background: rgba(0, 0, 0, 0.973);
+    position: absolute;
+    width: 100%;
+}
+
+.navegacion .submenu .hijos li {
+    display: block;
+    overflow: visible;
+    border-bottom: none;
+}
+
+.navegacion .submenu .hijos li a {
+    display: block;
+}
+
+    /* MAIN */
+
+section {
+    display: block;
+} 
+
+.container__informacion__banner {
+    display: block;
+    height: 124px;
+    margin-top: -4px;
+   /* background: rgba(0, 0, 0, 0.973);
+    color: #fff;*/
+}
+
+.container__informacion {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container__info__icon {
+    height: 120px;
+    padding: 0%;
+    display: flex;
+    overflow: hidden;
+}
+
+.alinear-left {
+    margin-top: 4px;
+    display: flex;
+}
+
+.icon__left {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    font-size: 12px;
+    width: 300px;  
+    margin-left: 120px;  
+}
+
+.truck-icon {
+    display: flex;
+    padding: 0%;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.envios {
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.text-left {
+    margin-left: 90px;
+    margin-top: -30px;
+}
+
+
+.icon__center {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    font-size: 12px;
+    margin: auto;
+    margin-top: -120px;
+}
+
+.cuotas {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+
+.cart-icon {
+    display: flex;
+    margin-top: 45px;
+}
+
+.text-center {
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.icon__right {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    font-size: 12px;
+    float: right;
+    margin-top: -120px;
+    margin-right: 120px;
+}
+
+.card-icon {
+    display: flex;
+    margin-top: 45px;
+}
+
+.pagos {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.text-right {
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.text {
+    display: block;
+    font-size: 12px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.icon {
+    font-size: 30px;
+} 
+
+.size {
+    height: 300px;
+    width: 300px;
+}
+
+/* DESTACADOS */ /* CTRL + K + C */
+
+
+.titulo__destacado {
+    background-color: rgb(220, 220, 220);
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container__destacado {
+    background-color: rgb(220, 220, 220);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 150px;
+    padding: 40px 75px 75px 75px;
+    align-content: stretch;
+}
+
+.container__productos {
+    border: solid 1px rgb(177, 176, 176);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.973);
+    color: #fff;
+    padding: auto;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20x;
+}
+
+.container__maps {
+    padding: 20px 20px;
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+}
+
+.google__maps {
+    text-decoration: underline;
+}
+
+.maps {
+    margin-top: 25px;
+}
+
+.container__contacto {
+    padding-top: 20px;
+    display: flex;
+}
+
+.contacto a h3 {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container__ubicacion {
+    padding-top: 20px;
+    display: flex;
+}
+
+.container__flex {
+    display: flex;
+    justify-content: center;
+}
+
+.container__ubicacion p {
+    margin-top: 45px;
+    margin-left: -92px;
+}
+
+.container__ubicacion h3 {
+    text-decoration: underline;
+}
+
+.conatainer__preguntas {
+    display: flex;
+    justify-content: center;
+}
+
+.preguntas__frecuentes {
+    margin-left: 42px;
+    margin-top: 60px;
+}
+
+.preguntas__frecuentes a h3 {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* SECCION PRODUCTOS */
+
+/* BUZOS */
+
+.section__buzos {
+    background-color: rgb(220, 220, 220);
+}
+
+/* PANTALONES */
+
+.pantalon-1 {
+    height: 300px;
+    width: 300px;
+}
+
+.pantalon-2 {
+    height: 350px;
+    width: 300px;
+}
+
+.pantalon-3 {
+    height: 340px;
+    width: 300px;
+}
+
+.pantalon-4 {
+    height: 500px;
+    width: 300px;
+}
+
+.pantalon-5 {
+    height: 420px;
+    width: 300px;
+}
+
+.pantalon-6 {
+    height: 420px;
+    width: 300px;
+}
