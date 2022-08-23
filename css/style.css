@@ -3,14 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
 }
 
     /* ENCABEZADO */
 header {
-    background-color: rgba(0, 0, 0, 0.945);
+    background-color: rgba(0, 0, 0);
     width: 100%;
     height: 90px;
+    position: fixed;
+    margin-top: -90px;
 }
 
 .navegacion {
@@ -31,7 +33,7 @@ header {
     float: right;
     display: flex;
     align-items: center;
-    min-height: 80px;
+    min-height: 100px;
     z-index: 1000;
 }
 
@@ -49,6 +51,7 @@ header {
 
 .navegacion ul li a {
     color: #fff;
+    text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -59,7 +62,6 @@ header {
 
 .navegacion ul li a:hover {
     color: rgb(255, 231, 154);
-    /* transform: scale(2); */
 }
 
 .navegacion ul li:hover .hijos {
@@ -84,82 +86,70 @@ header {
 }
 
     /* MAIN */
+main {
+    margin-top: 90px;
+}    
 
 section {
     display: block;
 } 
 
 .container__informacion__banner {
-    display: block;
     height: 124px;
-    margin-top: -4px;
-   /* background: rgba(0, 0, 0, 0.973);
-    color: #fff;*/
-}
-
-.container__informacion {
-    width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: auto;
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .container__info__icon {
     height: 120px;
-    padding: 0%;
     display: flex;
-    overflow: hidden;
-}
-
-.alinear-left {
-    margin-top: 4px;
-    display: flex;
+    align-self: center;
+    margin: auto;
 }
 
 .icon__left {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    float: left;
+    align-self: center;
     font-size: 12px;
     width: 300px;  
-    margin-left: 120px;  
 }
 
 .truck-icon {
     display: flex;
     padding: 0%;
     margin-top: 45px;
-    margin-left: 45px;
+    margin-left: 30px;
 }
 
 .envios {
+    font-size: 18px;
     margin-top: 40px;
     margin-left: 15px;
 }
 
 .text-left {
-    margin-left: 90px;
+    margin-left: 75px;
     margin-top: -30px;
 }
-
 
 .icon__center {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     width: 300px;
     font-size: 12px;
-    margin: auto;
-    margin-top: -120px;
 }
 
 .cuotas {
-    margin-top: 40px;
-    margin-left: 10px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: -50px;
 }
-
 
 .cart-icon {
     display: flex;
@@ -175,26 +165,26 @@ section {
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    width: 330px;
+    align-self: center;
+    width: 350px;
     font-size: 12px;
-    float: right;
-    margin-top: -120px;
-    margin-right: 120px;
 }
 
 .card-icon {
     display: flex;
+    margin-left: -35px;
     margin-top: 45px;
 }
 
 .pagos {
-    margin-top: 40px;
+    font-size: 18px;
+    margin-top: -60px;
     margin-left: 10px;
 }
 
 .text-right {
-    margin-left: 40px;
-    margin-top: -30px;
+    margin-left: 10px;
+    margin-top: -10px;
 }
 
 .text {
@@ -216,13 +206,14 @@ section {
 }
 
 /* DESTACADOS */ /* CTRL + K + C */
-
+.container__main__destacado {
+    background-color: rgb(220, 220, 220);
+}
 
 .titulo__destacado {
+    text-align: center;
     background-color: rgb(220, 220, 220);
     padding-top: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 .container__destacado {
@@ -231,12 +222,27 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 150px;
     padding: 40px 75px 75px 75px;
-    align-content: stretch;
 }
 
 .container__productos {
     border: solid 1px rgb(177, 176, 176);
+    width: 302px;
+    height: 389px;
 }
+
+.container__productos h3 {
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0%;
+}
+
+.price {
+    margin: 0%;
+}
+
+.price__interes {
+    margin: 0%;
+} 
 
 /* FOOTER */
 
@@ -267,8 +273,11 @@ footer {
 }
 
 .container__contacto {
+    width: 200px;
     padding-top: 20px;
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .contacto a h3 {
@@ -276,36 +285,46 @@ footer {
     text-decoration: underline;
 }
 
-.container__ubicacion {
-    padding-top: 20px;
-    display: flex;
+.contacto p {
+    margin-top:  -10px;
 }
 
 .container__flex {
+    height: 100px;
     display: flex;
     justify-content: center;
 }
-
-.container__ubicacion p {
-    margin-top: 45px;
-    margin-left: -92px;
+.container__ubicacion {
+    margin-left: -25px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .container__ubicacion h3 {
     text-decoration: underline;
 }
 
-.conatainer__preguntas {
-    display: flex;
-    justify-content: center;
+.container__ubicacion p {
+    margin-top: 20px;
 }
 
 .preguntas__frecuentes {
-    margin-left: 42px;
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 375px;
+    bottom: 150px;
 }
 
+.preguntas__frecuentes p {
+    margin: 0%;
+    padding-bottom: 4px;
+} 
+
 .preguntas__frecuentes a h3 {
+    padding-bottom: 10px;
     color: #fff;
     text-decoration: underline;
 }
@@ -313,9 +332,8 @@ footer {
 /* SECCION PRODUCTOS */
 
 /* BUZOS */
-
 .section__buzos {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(220, 220, 220); 
 }
 
 /* PANTALONES */
@@ -349,3 +367,301 @@ footer {
     height: 420px;
     width: 300px;
 }
+
+/* TABLET */
+@media  screen and (min-width: 481px) and (max-width: 768px) {
+    /** ENCABEZADO**/
+    header {
+        width: 768px;
+        position: fixed;
+    }
+    .navegacion {
+        margin-top: -80px;
+    }
+
+    .navegacion ul li a {
+        padding: 10px 16px;
+    }
+
+    /** INFORMACION**/
+    .container__informacion__banner {
+        width: 768px;
+    }
+
+    .container__info__icon {
+        width: 256px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-left {
+        font-size: 9px;
+        margin: 0%;
+    }
+    .icon__left .envios {
+        font-size: 16px;
+        margin: 0%;
+    }
+    .truck-icon {
+        margin: 0%;
+    }
+
+    .text-center {
+        font-size: 9px;
+        margin: 0%;
+    }
+    .cart-icon {
+        margin: 0%;
+    }
+    .icon__center .cuotas {
+        margin: 0%;
+        font-size: 16px;
+    }
+
+    .icon__right {
+        text-align: center;
+    }
+    .icon__right .pagos {
+        margin: 0%;
+    }
+    .card-icon {
+        margin: 0%;
+    }
+    .text-right {
+        font-size: 9px;
+        margin: 0%;
+    }
+
+    /**MAIN**/
+    .container__destacado {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 75px;
+        padding: 30px 50px 50px 50px;
+    }
+
+    .container__productos {
+        width: 282px;
+    }
+
+    .size {
+        width: 280px;
+        height: 280px;
+    }
+
+    /**FOOTER**/
+    footer {
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container__maps {
+        width: 340px;
+    }
+
+    .flex__ubicacion  {
+        width: 384px;
+        height: 110px;
+    }
+    .container__ubicacion{
+        margin: 0%;
+    }
+    .container__ubicacion h3{
+        margin: 0%;
+    }
+    .container__ubicacion p{
+        margin: 0%;
+        padding-top: 20px;
+    }
+
+    .flex__contacto {
+        width: 200px;
+        height: 110px;
+        position: relative;
+        left: 370px;
+        bottom: 230px;
+    }
+    .contacto {
+        height: 110px;
+    }
+    .container__contacto .contacto a p {
+        margin: 0%;
+    }
+    .conatainer__preguntas {
+        width: 384px;
+        height: 110px;
+    }
+
+    .container__preguntas{
+        height: 140px;
+        position: relative;
+        left: 170px;
+        bottom: 80px;
+    }
+    .preguntas__frecuentes {
+        position: relative;
+        left: 0%;
+        bottom: 0%;
+    } 
+
+}
+/* CELULAR */
+@media  screen and (min-width: 320px) and (max-width: 480px) {
+    header {
+        width: 480px;
+        height: 180px;
+        margin-top: -150px;
+        position: absolute;
+    }
+    .title {
+        margin-top: 15px;
+    }
+
+    .navegacion {
+        margin-top: -40px;
+    }
+
+    .navegacion ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 90px;
+        right: 350px;
+    }
+    .navegacion ul li a {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+        /** INFORMACION **/
+    .container__informacion__banner {
+        display: none;
+        width: 480px;
+        grid-template-columns: 1fr 1fr 1fr;
+        overflow: auto;
+        gap: 40px;
+    }
+    /*.container__info__icon {
+        position: relative;
+        left: 300px;
+    }
+
+    .icon__left {
+        position: relative;
+        left: 300px;
+    }
+
+    .icon__center {
+        position: relative;
+        left: 300px;
+    }
+
+    .icon__right {
+        position: relative;
+        left: 300px;
+    } */
+
+        /**  MAIN  **/
+    main {
+        width: 480px;
+        margin-top: 150px;
+    }
+    .logo {
+        max-width: 100%;
+        height: 180px;
+        margin-top: 30px;
+    }
+
+    .titulo__destacado {
+        width: 480px;
+    }
+    .container__main__destacado {
+        width: 480px;
+    }
+    .container__destacado {
+        width: 480px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px 75px;
+    }
+    
+    .container__productos {
+        width: 222px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        border: solid 1px rgb(177, 176, 176);
+    }
+
+    .size {
+        width: 220px;
+        height: 220px;
+    }
+
+    /** FOOTER **/
+    footer {
+        width: 480px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .maps {
+        width: 250px;
+        height: 250px;
+    }
+
+    .container__flex {
+        width: 479px;
+        height: 100px;
+        padding-left: 45px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .container__contacto {
+        left: 0;
+        bottom: 15px;
+    }
+    .preguntas__frecuentes {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+    .container__ubicacion{
+        margin: 0%;
+    }
+    .container__ubicacion p {
+        margin: 0%;
+        padding-top: 5px;
+        padding-right: 150px;
+        font-size: 12px;
+    }
+    .container__contacto p {
+        font-size: 12px;
+    }
+    .preguntas__frecuentes p {
+        font-size: 12px;
+    }
+
+    /* REGISTARSE */
+
+    .header__registrarse{
+        margin-top: -180px;
+    }
+    .section__registrarse {
+        margin-top: 180px;
+    }
+
+    /* AYUDA */
+    .header__ayuda {
+        margin-top: -180px;
+    }
+    .section__ayuda {
+        margin-top: 180px;
+    }
+}
+
+
