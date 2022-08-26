@@ -569,7 +569,7 @@ footer {
         margin-top: 150px;
     } */
     .logo {
-        width: 100%;
+        width: auto;
         height: 180px;
         margin-top: 50px;
     }
