@@ -368,7 +368,7 @@ footer {
 /* TABLET */
 @media  screen and (min-width: 481px) and (max-width: 768px) {
     /** ENCABEZADO**/
-    header {
+    /* header {
         width: 768px;
         position: fixed;
     }
@@ -378,7 +378,7 @@ footer {
 
     .navegacion ul li a {
         padding: 10px 16px;
-    }
+    } */
 
     /** INFORMACION**/
     .container__informacion__banner {
@@ -447,6 +447,9 @@ footer {
         width: 280px;
         height: 280px;
     }
+    .logo{
+        margin-top: 50px;
+    }
 
     /**FOOTER**/
     footer {
@@ -506,7 +509,7 @@ footer {
 }
 /* CELULAR */
 @media  screen and (min-width: 320px) and (max-width: 480px) {
-    header {
+    /* header {
         width: 480px;
         height: 180px;
         margin-top: -150px;
@@ -530,7 +533,7 @@ footer {
     .navegacion ul li a {
         font-size: 10px;
         padding: 10px 15px;
-    }
+    } */
 
         /** INFORMACION **/
     .container__informacion__banner {
@@ -561,14 +564,14 @@ footer {
     } */
 
         /**  MAIN  **/
-    main {
+    /* main {
         width: 480px;
         margin-top: 150px;
-    }
+    } */
     .logo {
         max-width: 100%;
         height: 180px;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .titulo__destacado {
