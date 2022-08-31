@@ -157,32 +157,38 @@
         </section>
     </main>
     <footer>
-        <div class="container__maps">
-            <h3 class="google__maps">Google Maps</h3>
-            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.7543615904647!2d-60.70512028515098!3d-31.640575314296925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9bc1133ac7d%3A0x38e3ad9aabd2d056!2sSuipacha%202423%2C%20S3000AZH%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1658802829643!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="container__flex flex__ubicacion">
-            <div class="container__ubicacion">
-                <h3>Ubicación</h3>
-                <p>Suipacha 2423, piso 1, dto. N°4, Santa Fe, AR.</p>
-            </div>
-        </div> 
-        <div class="container__flex flex__contacto">
-            <div class="container__contacto">
-                <div class="contacto">
-                    <a href="../secciones/contacto.html"><h3>Contacto</h3></a>
-                    <p><br>(+54) 0342 123456789 </br> info@fiuuumba.com</p>
+        <section class="container-fluid py-5 px-md-5 text-light">
+            <div class="row element-footer">
+                <div class="container__maps col-md">
+                    <h3 class="google__maps">Google Maps</h3>
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.7543615904647!2d-60.70512028515098!3d-31.640575314296925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9bc1133ac7d%3A0x38e3ad9aabd2d056!2sSuipacha%202423%2C%20S3000AZH%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1658802829643!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
-        </div>
-        <div class="container__flex container__preguntas">
-            <div class="preguntas__frecuentes">
-                <a href="../secciones/ayuda.html"><h3>Preguntas Frecuentes</h3></a>
-                <p>¿Cuáles son los métodos de pagos?</p>
-                <p>¿Cuánto puede tardar mi pedido en llegar?</p>
-                <p>¿Hacen reembolsos?</p>
-            </div>
-        </div>  
+                <div class="col-md">
+                    <div class="container__flex flex__ubicacion">
+                        <div class="container__ubicacion">
+                            <h3 class="text-decoration-underline">Ubicación</h3>
+                            <p>Suipacha 2423, piso 1, dto. N°4, Santa Fe, AR.</p>
+                        </div>
+                    </div>
+                    <div class="container__flex container__preguntas">
+                        <div class="preguntas__frecuentes py-3">
+                            <a href="../secciones/ayuda.html"><h3 class="text-decoration-underline text-light">Preguntas Frecuentes</h3></a>
+                            <p>¿Cuáles son los métodos de pagos?</p>
+                            <p>¿Cuánto puede tardar mi pedido en llegar?</p>
+                            <p>¿Hacen reembolsos?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__flex flex__contacto col-md">
+                    <div class="container__contacto">
+                        <div class="contacto">
+                            <a href="../secciones/contacto.html"><h3 class="text-decoration-underline text-light">Contacto</h3></a>
+                            <p>(+54) 0342 123456789 <br> info@fiuuumba.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
