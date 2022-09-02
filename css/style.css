@@ -7,90 +7,12 @@
 }
 
     /* ENCABEZADO */
-    .navbar {
-    background-color: black;
-}
-    /*width: 100%;
-    height: 90px;
-    position: fixed;
-    margin-top: -90px;
-}
 
-.navegacion {
-    max-width: 100%;
-    padding: 0 10px;
-    margin: auto;
-}
-
-.title {
-    float: left;
-    margin: 25px 25px;
-    color: #fff;
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.navegacion {
-    float: right;
-    display: flex;
-    align-items: center;
-    min-height: 100px;
-    z-index: 1000;
-}
-
-.navegacion ul {
-    list-style: none;
-    padding: 0px 10px;
-}
-
-.navegacion ul li {
-    display: inline-block;
-    position: relative;
-    transition: 5s linear;
-    z-index: 1000;
-}
-
-.navegacion ul li a {
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 12px 20px;
-    transition: 0.4s linear;
-}
-
-.navegacion ul li a:hover {
-    color: rgb(255, 231, 154);
-}
-
-.navegacion ul li:hover .hijos {
-    display: block;
-}
-
-.navegacion .submenu .hijos {
-    display: none;
-    background: rgba(0, 0, 0, 0.973);
-    position: absolute;
-    width: 100%;
-}
-
-.navegacion .submenu .hijos li {
-    display: block;
-    overflow: visible;
-    border-bottom: none;
-}
-
-.navegacion .submenu .hijos li a {
-    display: block;
-} */
+    header{
+        height: 56px;
+    }
 
     /* MAIN */
-
-section {
-    display: block;
-} 
 
 .container__informacion__banner {
     height: 124px;
@@ -186,12 +108,12 @@ section {
 }
 
 .text {
-    display: block;
     font-size: 12px;
 }
 
-.logo {
-    width: 90rem;
+.logo img {
+    width: 100%;
+    height: 65vh;
 }
 
 .icon {
@@ -248,91 +170,7 @@ section {
 footer {
     background-color: black;
 }
-    /*color: #fff;
-    padding: auto;
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20x;
-}
-
- .container__maps {
-    padding: 20px 20px;
-    width: 300px;
-    height: 300px;
-    margin-left: 25px;
-}
-
-.google__maps {
-    text-decoration: underline;
-}
-
-.maps {
-    margin-top: 25px;
-}
-
-.container__contacto {
-    width: 200px;
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.contacto a h3 {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.contacto p {
-    margin-top:  -10px;
-}
-
-.container__flex {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-}
-.container__ubicacion {
-    margin-left: -25px;
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.container__ubicacion h3 {
-    text-decoration: underline;
-}
-
-.container__ubicacion p {
-    margin-top: 20px;
-}
-
-.preguntas__frecuentes {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 375px;
-    bottom: 150px;
-}
-
-.preguntas__frecuentes p {
-    margin: 0%;
-    padding-bottom: 4px;
-} 
-
-.preguntas__frecuentes a h3 {
-    padding-bottom: 10px;
-    color: #fff;
-    text-decoration: underline;
-} */
-
-/* AYUDA */
-
-/* SECCION PRODUCTOS */
-
+   
 /* BUZOS */
 .section__buzos {
     background-color: rgb(220, 220, 220); 
@@ -372,22 +210,12 @@ footer {
 
 /* TABLET */
 @media  screen and (min-width: 481px) and (max-width: 768px) {
-    /** ENCABEZADO**/
-    /* header {
-        width: 768px;
-        position: fixed;
+    header {
+        width: 100%;
     }
-    .navegacion {
-        margin-top: -80px;
-    }
-
-    .navegacion ul li a {
-        padding: 10px 16px;
-    } */
-
     /** INFORMACION**/
     .container__informacion__banner {
-        width: 768px;
+        width: 100%;
     }
 
     .container__info__icon {
@@ -423,6 +251,7 @@ footer {
     }
 
     .icon__right {
+        width: 240px;
         text-align: center;
     }
     .icon__right .pagos {
@@ -453,93 +282,18 @@ footer {
         height: 280px;
     }
     .logo{
-        width: 768px;
-        margin-top: 50px;
+        width: 100%;
+        height: 65vh;
     }
 
     /**FOOTER**/
-    /* footer {
-        height: 500px;
-        display: flex;
-        flex-wrap: wrap;
+    footer {
+        height: 100%;
     }
-    .container__maps {
-        width: 340px;
-    }
-
-    .flex__ubicacion  {
-        width: 384px;
-        height: 110px;
-    }
-    .container__ubicacion{
-        margin: 0%;
-    }
-    .container__ubicacion h3{
-        margin: 0%;
-    }
-    .container__ubicacion p{
-        margin: 0%;
-        padding-top: 20px;
-    }
-
-    .flex__contacto {
-        width: 200px;
-        height: 110px;
-        position: relative;
-        left: 370px;
-        bottom: 230px;
-    }
-    .contacto {
-        height: 110px;
-    }
-    .container__contacto .contacto a p {
-        margin: 0%;
-    }
-    .conatainer__preguntas {
-        width: 384px;
-        height: 110px;
-    }
-
-    .container__preguntas{
-        height: 140px;
-        position: relative;
-        left: 170px;
-        bottom: 80px;
-    }
-    .preguntas__frecuentes {
-        position: relative;
-        left: 0%;
-        bottom: 0%;
-    }  */
 
 }
 /* CELULAR */
 @media  screen and (min-width: 320px) and (max-width: 480px) {
-    /* header {
-        width: 480px;
-        height: 180px;
-        margin-top: -150px;
-        position: absolute;
-    }
-    .title {
-        margin-top: 15px;
-    }
-
-    .navegacion {
-        margin-top: -40px;
-    }
-
-    .navegacion ul {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 90px;
-        right: 350px;
-    }
-    .navegacion ul li a {
-        font-size: 10px;
-        padding: 10px 15px;
-    } */
 
         /** INFORMACION **/
     .container__informacion__banner {
@@ -549,7 +303,7 @@ footer {
         overflow: auto;
         gap: 40px;
     }
-    /*.container__info__icon {
+    .container__info__icon {
         position: relative;
         left: 300px;
     }
@@ -567,35 +321,32 @@ footer {
     .icon__right {
         position: relative;
         left: 300px;
-    } */
+    }
 
         /**  MAIN  **/
-    /* main {
-        width: 480px;
-        margin-top: 150px;
-    } */
     .logo {
-        width: auto;
+        width: 100%;
         height: 180px;
-        margin-top: 50px;
+    }
+    .logo .logo__mobile {
+        height: 180px;
     }
 
     .titulo__destacado {
-        width: 480px;
+        width: 100%;
     }
     .container__main__destacado {
-        width: 480px;
+        width: 100%;
     }
     .container__destacado {
-        width: 480px;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 25px 75px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .container__productos {
         width: 222px;
-        margin: auto;
         display: flex;
         flex-direction: column;
         border: solid 1px rgb(177, 176, 176);
@@ -608,67 +359,6 @@ footer {
 
     /** FOOTER **/
     footer {
-        width: 480px;
-    }
-       /* height: 700px;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .maps {
-        width: 250px;
-        height: 250px;
-    }
-
-    .container__flex {
-        width: 479px;
-        height: 100px;
-        padding-left: 45px;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-    }
-    .container__contacto {
-        left: 0;
-        bottom: 15px;
-    }
-    .preguntas__frecuentes {
-        position: relative;
-        left: 0px;
-        top: 0px;
-    }
-    .container__ubicacion{
-        margin: 0%;
-    }
-    .container__ubicacion p {
-        margin: 0%;
-        padding-top: 5px;
-        padding-right: 150px;
-        font-size: 12px;
-    }
-    .container__contacto p {
-        font-size: 12px;
-    }
-    .preguntas__frecuentes p {
-        font-size: 12px;
-    } */
-
-    /* REGISTARSE */
-
-    .header__registrarse{
-        margin-top: -180px;
-    }
-    .section__registrarse {
-        margin-top: 180px;
-    }
-
-    /* AYUDA */
-    .header__ayuda {
-        margin-top: -180px;
-    }
-    .section__ayuda {
-        margin-top: 180px;
+        width: 100%;
     }
 }
-
-

@@ -1,0 +1,99 @@
+.container__informacion__banner {
+    height: 124px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+        .container__info__icon {
+            height: 120px;
+            display: flex;
+            align-self: center;
+            margin: auto;
+        }
+        .icon__left {
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-self: center;
+            font-size: 12px;
+            width: 300px; 
+            
+                .truck-icon {
+                    display: flex;
+                    padding: 0%;
+                    margin-top: 45px;
+                    margin-left: 30px;
+                }
+        
+                .envios {
+                    font-size: 18px;
+                    margin-top: 40px;
+                    margin-left: 15px;
+                }
+        
+                .text-left {
+                    margin-left: 75px;
+                    margin-top: -30px;
+                }
+                .text {
+                    font-size: 12px;
+                }
+        }
+        .icon__center {
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-self: center;
+            width: 300px;
+            font-size: 12px;
+        
+                .cuotas {
+                    font-size: 18px;
+                    margin-left: 40px;
+                    margin-top: -50px;
+                }
+                
+                .cart-icon {
+                    display: flex;
+                    margin-top: 45px;
+                }
+                
+                .text-center {
+                    margin-left: 40px;
+                    margin-top: -30px;
+                }
+                .text {
+                    font-size: 12px;
+                }
+        }
+        .icon__right {
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-self: center;
+            width: 350px;
+            font-size: 12px;
+        
+                .card-icon {
+                    display: flex;
+                    margin-left: -35px;
+                    margin-top: 45px;
+                }
+                
+                .pagos {
+                    font-size: 18px;
+                    margin-top: -60px;
+                    margin-left: 10px;
+                }
+                
+                .text-right {
+                    margin-left: 10px;
+                    margin-top: -10px;
+                }
+                
+                .text {
+                    font-size: 12px;
+                }
+        }
+}

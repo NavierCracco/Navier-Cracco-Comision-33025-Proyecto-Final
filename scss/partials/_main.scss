@@ -1,0 +1,40 @@
+.container__main__destacado {
+    background-color: $colorMain;
+
+        .titulo__destacado {
+            text-align: center;
+            background-color: $colorMain;
+            padding-top: 40px;
+        }
+
+        .container__destacado {
+            background-color: $colorMain;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px 150px;
+            padding: 40px 75px 75px 75px;
+
+                .container__productos {
+                    border: solid 1px $borderColor;
+                    width: 302px;
+                    height: 400px;
+
+                        h3 {
+                            padding-top: 8px;
+                            font-size: 18px;
+                            font-weight: bolder;
+                            margin: 0%;
+                        }
+                        .price {
+                            margin: 0%;
+                        }
+                        .price__interes {
+                            margin: 0%;
+                        }
+                }
+        }
+}
+
+.section__buzos {
+    background-color: $colorMain; 
+}
