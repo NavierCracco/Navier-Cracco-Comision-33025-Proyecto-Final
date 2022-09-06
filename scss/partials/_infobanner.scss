@@ -16,7 +16,6 @@
             display: flex;
             flex-wrap: wrap;
             align-self: center;
-            font-size: 12px;
             width: 300px; 
             
                 .truck-icon {
@@ -27,7 +26,8 @@
                 }
         
                 .envios {
-                    font-size: 18px;
+                    font-size: 1rem;
+                    font-weight: bold;
                     margin-top: 40px;
                     margin-left: 15px;
                 }
@@ -37,7 +37,7 @@
                     margin-top: -30px;
                 }
                 .text {
-                    font-size: 12px;
+                    font-size: 0.8rem;
                 }
         }
         .icon__center {
@@ -46,12 +46,14 @@
             flex-wrap: wrap;
             align-self: center;
             width: 300px;
-            font-size: 12px;
         
                 .cuotas {
-                    font-size: 18px;
-                    margin-left: 40px;
-                    margin-top: -50px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-left: 10px;
+                    margin-top: 15px;
+                    display: flex;
+                    align-items:center;
                 }
                 
                 .cart-icon {
@@ -64,7 +66,7 @@
                     margin-top: -30px;
                 }
                 .text {
-                    font-size: 12px;
+                    font-size: 0.75rem;
                 }
         }
         .icon__right {
@@ -82,9 +84,12 @@
                 }
                 
                 .pagos {
-                    font-size: 18px;
-                    margin-top: -60px;
-                    margin-left: 10px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-left: 15px;
+                    padding-top: 30px;
+                    display: flex;
+                    align-items: center;
                 }
                 
                 .text-right {
@@ -93,7 +98,7 @@
                 }
                 
                 .text {
-                    font-size: 12px;
+                    font-size: 0.8rem;
                 }
         }
 }
