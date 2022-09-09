@@ -28,8 +28,7 @@
     }
 
     .logo {
-        width: 100%;
-        height: 150px;
+        @include sizes (100%, 150px);
 
         .logo__mobile {
             height: 150px;
@@ -59,16 +58,56 @@
     }
     
     .size {
-        width: 220px;
-        height: 220px;
+        @include sizes (220px, 220px);
     }
-    
+
+    .pantalon-roma {
+        
+        .pantalon-1 {
+            @include sizes (220px, 220px)
+        }
+    }
+
+    .pantalon-barcelona {
+        
+        .pantalon-2 {
+            @include sizes (220px, 250px)
+        }
+    }
+
+    .pantalon-bsas {
+        
+        .pantalon-3 {
+            @include sizes (220px, 240px)
+        }
+    }
+
+    .pantalon-ny {
+        
+        .pantalon-4 {
+            @include sizes (220px, 360px)
+        }
+    }
+
+    .pantalon-paris {
+        
+        .pantalon-5 {
+            @include sizes (220px, 300px)
+        }
+    }
+
+    .pantalon-berlin {
+        
+        .pantalon-6 {
+            @include sizes (220px, 300px)
+        }
+    }
+
     footer {
         width: 100%;
 
             .maps {
-                width: 250px;
-                height: 250px;
+                @include sizes (250px, 250px);
             }
     }
 }

@@ -2,3 +2,42 @@ $fontMain: 'Montserrat', sans-serif;
 $colorMain: rgb(220, 220, 220);
 $borderColor: rgb(177, 176, 176);
 $secondaryColor: rgb(33, 37, 41);
+
+$pantalones: ( 
+    roma: solid 1px $borderColor,
+    barcelona: solid 1px $borderColor,
+    bsas:  solid 1px $borderColor,
+    ny: solid 1px $borderColor,
+    paris: solid 1px $borderColor,
+    berlin: solid 1px $borderColor
+);
+
+%pantalon {
+    background-color: $secondaryColor;
+    color: #fff;
+    border-radius: 5px;
+    transition: 1s;
+
+        &:hover {
+            transform: scale(1.08)
+        }
+        
+        h3 {
+            padding-top: 8px;
+            padding-left: 4px;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            margin: 0%;
+        }
+        .price {
+            padding-left: 4px;
+        }
+        .price__interes {
+            padding-left: 4px;
+        }
+}
+
+@mixin sizes ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
