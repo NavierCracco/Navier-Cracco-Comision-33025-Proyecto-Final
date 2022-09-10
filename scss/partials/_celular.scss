@@ -62,27 +62,31 @@
     }
 
     .pantalon-roma {
+        width: 222px;
         
         .pantalon-1 {
-            @include sizes (220px, 220px)
+            @include sizes (220px, 240px)
         }
     }
 
     .pantalon-barcelona {
+        width: 222px;
         
         .pantalon-2 {
-            @include sizes (220px, 250px)
+            @include sizes (220px, 270px)
         }
     }
 
     .pantalon-bsas {
-        
+        width: 222px;
+
         .pantalon-3 {
             @include sizes (220px, 240px)
         }
     }
 
     .pantalon-ny {
+        width: 222px;
         
         .pantalon-4 {
             @include sizes (220px, 360px)
@@ -90,6 +94,7 @@
     }
 
     .pantalon-paris {
+        width: 222px;
         
         .pantalon-5 {
             @include sizes (220px, 300px)
@@ -97,6 +102,7 @@
     }
 
     .pantalon-berlin {
+        width: 222px;
         
         .pantalon-6 {
             @include sizes (220px, 300px)

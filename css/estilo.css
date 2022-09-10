@@ -293,24 +293,36 @@ footer {
   .size {
     width: 220px;
     height: 220px; }
-  .pantalon-roma .pantalon-1 {
-    width: 220px;
-    height: 220px; }
-  .pantalon-barcelona .pantalon-2 {
-    width: 220px;
-    height: 250px; }
-  .pantalon-bsas .pantalon-3 {
-    width: 220px;
-    height: 240px; }
-  .pantalon-ny .pantalon-4 {
-    width: 220px;
-    height: 360px; }
-  .pantalon-paris .pantalon-5 {
-    width: 220px;
-    height: 300px; }
-  .pantalon-berlin .pantalon-6 {
-    width: 220px;
-    height: 300px; }
+  .pantalon-roma {
+    width: 222px; }
+    .pantalon-roma .pantalon-1 {
+      width: 220px;
+      height: 240px; }
+  .pantalon-barcelona {
+    width: 222px; }
+    .pantalon-barcelona .pantalon-2 {
+      width: 220px;
+      height: 270px; }
+  .pantalon-bsas {
+    width: 222px; }
+    .pantalon-bsas .pantalon-3 {
+      width: 220px;
+      height: 240px; }
+  .pantalon-ny {
+    width: 222px; }
+    .pantalon-ny .pantalon-4 {
+      width: 220px;
+      height: 360px; }
+  .pantalon-paris {
+    width: 222px; }
+    .pantalon-paris .pantalon-5 {
+      width: 220px;
+      height: 300px; }
+  .pantalon-berlin {
+    width: 222px; }
+    .pantalon-berlin .pantalon-6 {
+      width: 220px;
+      height: 300px; }
   footer {
     width: 100%; }
     footer .maps {
