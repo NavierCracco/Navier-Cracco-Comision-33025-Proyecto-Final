@@ -1,7 +1,7 @@
 {
   "name": "navier-cracco-comision-33025-proyecto-final",
   "version": "1.0.0",
-  "description": "",
+  "description": "E-commerce de artículos de indumentaria masculina y femenina",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
